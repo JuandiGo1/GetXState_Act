@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'controllers/value_controller.dart';
 import 'ui/pages/page1.dart';
 
 void main() {
@@ -12,7 +13,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     //todo: uncomment this line to use GetX
-    //Get.put(CountController());
+    ValueController controller =Get.put(ValueController());
     return GetMaterialApp(
         title: 'GetX Demo',
         debugShowCheckedModeBanner: false,
